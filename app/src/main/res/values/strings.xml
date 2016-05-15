@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CarOs</string>
+
+
+    <string name="title_activity_caractivity">Caractivity</string>
+
+    <string name="title_activity_settingactivity">Settingactivity</string>
+
+    <string name="title_activity_welcomeactivity">Welcomeactivity</string>
+
+    <string name="title_activity_fm">FMActivity</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-2147837682175955/8193985429</string>
+</resources>

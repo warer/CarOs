@@ -1,0 +1,151 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc"
+    tools:context="me.warer.caros.Settingactivity"
+    android:launchMode="singleTask" android:screenOrientation="portrait" >
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            style="?metaButtonBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/black_overlay"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_gravity="left|top"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="重置用户："
+                android:id="@+id/textView13"
+                android:layout_gravity="center_vertical" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="用户1"
+                android:id="@+id/button2"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:textSize="25dp"
+                android:layout_weight="0.11" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="用户2"
+                android:id="@+id/button3"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:textSize="25dp"
+                android:layout_weight="0.11" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:text="用户3"
+                android:id="@+id/button4"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:textSize="25dp"
+                android:layout_weight="0.11" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:weightSum="1"
+            android:layout_marginTop="100dp">
+
+            <TextView
+                android:layout_width="166dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="座位与后视镜："
+                android:id="@+id/textView14"
+                android:layout_gravity="center_vertical" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/radioGroup3"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="自动调整"
+                    android:id="@+id/radioButton54"
+                    android:layout_weight="0.14"
+                    android:checked="false"
+                    android:textSize="25dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="手动调整"
+                    android:id="@+id/radioButton55"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.21"
+                    android:checked="false"
+                    android:textSize="25dp" />
+            </RadioGroup>
+        </TableRow>
+
+        <Button
+            android:layout_width="163dp"
+            android:layout_height="85dp"
+            android:text="设置当前账户为默认账户"
+            android:id="@+id/button6"
+            android:layout_gravity="left|bottom"
+            android:layout_marginLeft="50dp"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="156dp"
+            android:layout_height="86dp"
+            android:text="取消默认登陆账户"
+            android:id="@+id/button7"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginLeft="0dp"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="144dp"
+            android:layout_height="88dp"
+            android:text="保存"
+            android:id="@+id/button8"
+            android:layout_gravity="right|bottom"
+            android:layout_marginLeft="0dp"
+            android:textSize="20dp"
+            android:layout_marginRight="50dp" />
+
+    </FrameLayout>
+
+</FrameLayout>
